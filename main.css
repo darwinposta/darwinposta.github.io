@@ -1,0 +1,242 @@
+html, body {
+    background: #466368;
+  background: linear-gradient(to left, #648880, #293f50);
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: "Comforta";
+    src: url(static/Comfortaa-Regular.ttf) format("truetype");
+}
+body .mainheader {
+    font-family: "Comforta";
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: white;
+}
+* {
+	box-sizing: border-box;
+}
+.header body {
+	font-family:rig;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header h2,
+.header h3,
+.header a,
+.header input {
+	color: #34495e;
+}
+
+.header a {
+	text-decoration: none;
+}
+.header .logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.header .main-nav {
+	margin-top: 5px;
+
+}
+.header .logo a,
+.header .main-nav a,
+.dropdown .dropbtn {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+.header .main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+.header .main-nav a:hover {
+	color: #718daa;
+}
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.flexgrid {
+    display: flex;
+    justify-content: center;
+}
+.maincontent {
+    justify-content: center;
+}
+.flexgrid .textcol {
+    background-color: white;
+    padding: 20px;
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+
+}
+.formOrganizer {
+    display: flex;
+
+}
+.formOrganizer .p1 {
+    padding-bottom: 20px;
+}
+.myForm .col {
+    padding: 5px;
+    padding-left: 0;
+    display: flex;
+    flex: 1;
+}
+.myForm .col input {
+    padding-top: 10px;
+    border: none;
+    border-bottom: solid black 2px;
+    outline: 0;
+    height: 35px;
+    width: 100%;
+}
+.myForm .col input:hover {
+    border-bottom: solid #648880 2px;
+}
+.myForm .col input:focus {
+    border-bottom: solid #648880 2px;
+}
+.radioSorter {
+    display:flex;
+    flex: 1;
+    width: 100%;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #466368;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 15px;
+    margin-top: 0;
+    border-radius: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 15px 0 15px 15px;
+    z-index: 1;
+    right: 15px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #293f50;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.textcol .landingpage {
+    font-family: "Comforta";
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px;
+
+}
+
+.textcol .landingpage .quotes {
+    color: darkslategrey;
+    font-size: 14px;
+}
+
+.img1 {
+    float: left;
+    margin: 8px;
+    margin-left: 0;
+}
+.img2 {
+    float: right;
+    margin: 8px;
+    margin-right: 0;
+}
+.widthconstrainer {
+    width: 50%;
+
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+    .dropdown .dropbtn {
+        align-self: center;
+    }
+    
+	.header, .dropdown .dropbtn {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	    }
+	}
+
+}
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+        align-items: center;
+	}
+}
+
+/* ======================================
+Dark Mode Button
+======================================== */
+
+
+
